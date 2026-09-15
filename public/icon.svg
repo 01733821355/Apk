@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for Android / iOS icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner subtle decorative border -->
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15" />
+
+  <!-- Ledger Book Base -->
+  <g filter="url(#shadow)">
+    <!-- Book back shadow / spine -->
+    <rect x="110" y="96" width="292" height="320" rx="28" fill="#ffffff" />
+    
+    <!-- Spine Accent -->
+    <path d="M110 124 C110 108.5 122.5 96 138 96 L164 96 L164 416 L138 416 C122.5 416 110 403.5 110 388 Z" fill="#e2e8f0" />
+    <line x1="164" y1="96" x2="164" y2="416" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Ledger Bookmark Ribbon in Gold -->
+    <path d="M210 96 L210 200 L230 180 L250 200 L250 96 Z" fill="url(#goldGrad)" />
+
+    <!-- Ledger lines -->
+    <line x1="184" y1="230" x2="370" y2="230" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" stroke-opacity="0.5" />
+    <line x1="184" y1="270" x2="340" y2="270" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" stroke-opacity="0.5" />
+    <line x1="184" y1="310" x2="310" y2="310" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" stroke-opacity="0.5" />
+    <line x1="184" y1="350" x2="360" y2="350" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" stroke-opacity="0.5" />
+
+    <!-- Bangladeshi Taka Symbol Badge -->
+    <circle cx="344" cy="160" r="48" fill="url(#goldGrad)" />
+    <text x="344" y="180" font-family="'Hind Siliguri', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="900" fill="#ffffff" text-anchor="middle">৳</text>
+  </g>
+
+  <!-- Cloud Sync Symbol badge bottom right -->
+  <g transform="translate(290, 310)" filter="url(#shadow)">
+    <circle cx="65" cy="65" r="54" fill="#0284c7" />
+    <!-- Cloud Path -->
+    <path d="M48 76 C42 76 37 71 37 65 C37 59.5 41 55 46.5 54.2 C48 44 56.5 36 67 36 C76.5 36 84.5 42.5 87 51.5 C93 52.5 97.5 57.5 97.5 63.5 C97.5 70.4 92 76 85 76 Z" fill="#ffffff" />
+    <!-- Up/Down sync arrows -->
+    <path d="M60 62 L67 55 L74 62 M67 56 L67 71" stroke="#0284c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
